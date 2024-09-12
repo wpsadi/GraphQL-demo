@@ -1,0 +1,25 @@
+# mutation {
+#   createCourse(input: {courseName: "JS bootcamp", price: 12,
+#   teachingAssistant:[
+#     {
+#       firstName:"aditya",
+#       lastName:"goel",
+#       experience:1
+#     }
+#   ]}) {
+#     id
+#     courseName
+#     teachingAssistant {
+#       id
+#     }
+#   }
+# }
+
+query{
+  getCourse(id: "2c390617-94e5-4103-ba7a-cd8c3a2d0245"){
+    id
+    # teachingAssistant{
+    #   firstName
+    # }
+  }
+}
